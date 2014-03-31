@@ -7,7 +7,7 @@
 			if ($.fn.ypFlowGrid.methods[option]) {
 				// Call method
 				var methodName = option;
-				
+
 				return $.fn.ypFlowGrid.methods[methodName].apply(this, Array.prototype.slice.call(arguments, 1))
 			} else {
 				console.log('Method is not defined');
@@ -68,7 +68,7 @@
 
     		$(this).html('');
 
-    		var colsCount = Math.ceil($(this).width() / settings.minColWidth);
+    		var colsCount = Math.floor($(this).width() / settings.minColWidth);
     		var colWidth = Math.floor($(this).width() / colsCount);
     		var $cols = [];
     		for (var i = 0; i < colsCount; i++) {
