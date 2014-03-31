@@ -1,0 +1,13 @@
+.ypfg-col {
+	float: left;
+	display: block;
+	background: yellow;
+	min-height: 200px;
+	text-align: center;
+}
+.ypfg-item {
+	width: 200px;
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 25px;
+}
